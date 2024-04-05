@@ -3,7 +3,6 @@ package com.example.lms;
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
-//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -94,7 +93,7 @@ public class ReturnBook extends AppCompatActivity {
                             StName.setText("");
                             RegNo.setText("");
                             Intent intent=new Intent(getApplicationContext(),
-                                    com.androiddeveloper.sheikhameen.librarymanagement.DetailReturnBk.class);
+                                    com.example.lms.DetailReturnBk.class);
                             intent.putExtra("issueDate",issueDate);
                             intent.putExtra("returnDate",Rdate);
                             intent.putExtra("Id",sID);
