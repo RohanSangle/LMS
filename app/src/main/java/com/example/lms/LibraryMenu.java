@@ -53,7 +53,7 @@ public class LibraryMenu extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent=new Intent(getApplicationContext(),
-                        com.example.lms.AddBook.class);
+                        com.example.lms.addBook.class);
                 startActivity(intent);
 
             }
