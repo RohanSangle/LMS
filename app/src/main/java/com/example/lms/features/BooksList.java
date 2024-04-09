@@ -1,13 +1,17 @@
-package com.example.lms;
+package com.example.lms.features;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.util.Log;
-import android.view.View;
+
 import android.widget.Toast;
+
+import com.example.lms.BooksAdapter;
+import com.example.lms.R;
+import com.example.lms.database.dbHelper;
+
 import java.util.ArrayList;
 public class BooksList extends AppCompatActivity {
 
@@ -34,7 +38,7 @@ public class BooksList extends AppCompatActivity {
             public void onItemClicked(int position) {
 
                 Intent intent=new Intent(getApplicationContext(),
-                        com.example.lms.StatsShow.class);
+                        StatsShow.class);
 
                 String name="";
                 name= BooksName.get(position).trim();

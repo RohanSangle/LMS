@@ -1,11 +1,7 @@
-package com.example.lms;
+package com.example.lms.features;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
-import android.content.res.Resources;
-import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +9,10 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.lms.R;
+import com.example.lms.database.DbIssueBook;
+import com.example.lms.database.dbHelper;
 
 import java.util.Calendar;
 

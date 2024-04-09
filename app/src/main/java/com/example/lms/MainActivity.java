@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.lms.auth.userLogin;
+
 public class MainActivity extends AppCompatActivity {
 
     Button StudentBtn,AdminBtn,FacultyBtn;
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 String choice;
                 choice="Student";
                 Intent intent = new Intent(MainActivity.this,
-                        com.example.lms.userLogin.class);
+                        userLogin.class);
                 intent.putExtra("ChoiceButton",choice);
                 startActivity(intent);
             }
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 String choice;
                 choice="Admin";
                 Intent intent2 = new Intent(MainActivity.this,
-                        com.example.lms.userLogin.class);
+                        userLogin.class);
                 intent2.putExtra("ChoiceButton",choice);
                 startActivity(intent2);
 
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 String choice;
                 choice="Faculty";
                 Intent intent3 = new Intent(MainActivity.this,
-                        com.example.lms.userLogin.class);
+                        userLogin.class);
                 intent3.putExtra("ChoiceButton",choice);
                 startActivity(intent3);
 

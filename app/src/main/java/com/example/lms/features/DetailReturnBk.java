@@ -1,4 +1,4 @@
-package com.example.lms;
+package com.example.lms.features;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.lms.R;
+import com.example.lms.database.DbIssueBook;
 
 public class DetailReturnBk extends AppCompatActivity {
     TextView issueDate,ReturnDate;

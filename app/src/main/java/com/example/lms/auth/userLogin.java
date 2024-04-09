@@ -1,4 +1,4 @@
-package com.example.lms;
+package com.example.lms.auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -8,6 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.lms.R;
+import com.example.lms.database.LoginDataBaseHelper;
+
 public class userLogin extends AppCompatActivity {
 
     EditText email,password;
@@ -30,7 +34,7 @@ public class userLogin extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent=new Intent(getApplicationContext(),
-                        com.example.lms.register.class);
+                        com.example.lms.auth.register.class);
 
                 startActivity(intent);
 

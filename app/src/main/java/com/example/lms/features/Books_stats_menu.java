@@ -1,13 +1,12 @@
-package com.example.lms;
+package com.example.lms.features;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
+import com.example.lms.R;
 
 public class Books_stats_menu extends AppCompatActivity {
     ImageView issueBooks,AllBooks;
@@ -23,7 +22,7 @@ public class Books_stats_menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Books_stats_menu.this,
-                        com.example.lms.BooksList.class);
+                        BooksList.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +31,7 @@ public class Books_stats_menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Books_stats_menu.this,
-                        com.example.lms.IssuedBooksList.class);
+                        IssuedBooksList.class);
                 startActivity(intent);
 
 

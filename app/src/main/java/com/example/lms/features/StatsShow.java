@@ -1,9 +1,12 @@
-package com.example.lms;
+package com.example.lms.features;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.lms.R;
+import com.example.lms.database.dbHelper;
 
 public class StatsShow extends AppCompatActivity {
 

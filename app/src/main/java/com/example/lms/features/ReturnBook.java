@@ -1,4 +1,4 @@
-package com.example.lms;
+package com.example.lms.features;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
@@ -10,6 +10,9 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.lms.R;
+import com.example.lms.database.DbIssueBook;
 
 import java.util.Calendar;
 
@@ -93,7 +96,7 @@ public class ReturnBook extends AppCompatActivity {
                             StName.setText("");
                             RegNo.setText("");
                             Intent intent=new Intent(getApplicationContext(),
-                                    com.example.lms.DetailReturnBk.class);
+                                    DetailReturnBk.class);
                             intent.putExtra("issueDate",issueDate);
                             intent.putExtra("returnDate",Rdate);
                             intent.putExtra("Id",sID);

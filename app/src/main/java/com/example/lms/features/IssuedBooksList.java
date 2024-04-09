@@ -1,4 +1,4 @@
-package com.example.lms;
+package com.example.lms.features;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -6,6 +6,10 @@ import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.widget.Toast;
+
+import com.example.lms.BooksAdapter;
+import com.example.lms.R;
+import com.example.lms.database.DbIssueBook;
 
 import java.util.ArrayList;
 
@@ -36,7 +40,7 @@ public class IssuedBooksList extends AppCompatActivity {
                     public void onItemClicked(int position) {
 
                         Intent intent = new Intent(getApplicationContext(),
-                                com.example.lms.IssuedBooksDataDisplay.class);
+                                IssuedBooksDataDisplay.class);
 
                         String Id = "";
                         String Id1="";

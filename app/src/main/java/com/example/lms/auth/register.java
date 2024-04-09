@@ -1,4 +1,4 @@
-package com.example.lms;
+package com.example.lms.auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.lms.R;
+import com.example.lms.database.LoginDataBaseHelper;
+
 public class register extends AppCompatActivity {
 
     EditText name,email,regNo,password,confirmPass;

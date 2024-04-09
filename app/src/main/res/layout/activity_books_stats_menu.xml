@@ -6,7 +6,7 @@
     android:background="@drawable/gradient"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".Books_stats_menu">
+    tools:context=".features.Books_stats_menu">
 
     <ImageView
         android:id="@+id/IvIssuedBook"
